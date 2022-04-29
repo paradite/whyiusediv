@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why I use div</title>
+  <style>
+    body {
+      padding: 16px;
+      max-width: 720px;
+      margin: 0 auto;
+      font-family: sans-serif;
+      color: #333;
+      line-height: 1.4;
+    }
+    
+    img {
+      border: 1px solid #ccc;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 1.6em;
+    }
+
+    h2 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 1em;
+      margin-top: 0;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #d3d3d3;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    li img {
+      margin-bottom: 0;
+    }
+
+    li::marker {
+      color: #57a0d3;
+    }
+
+    .code {
+      font-family: monospace;
+      background-color: #eeeeee;
+      padding: 2px;
+      border-radius: 2px;
+    }
+
+    .image-container {
+      padding: 4px 4px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Why I use div,</h1>
+  <p><span class="code">&lt;p&gt;</span>, <span class="code">&lt;h1&gt;</span> and a few other things,</p>
+  <p>but not new HTML5 tags such as <span class="code">&lt;section&gt;</span> and <span class="code">&lt;article&gt;</span> and complicated tags such as <span class="code">&lt;table&gt;</span>.</p>
+  <ul>
+    <li>
+      I don't need to think about <a href="https://stackoverflow.com/questions/7549561/section-vs-article-html5">which tag to use</a>. Productivity ⬆️
+    </li>
+    <li>
+      I don't need to worry about <a href="https://stackoverflow.com/questions/4870955/in-html5-should-the-main-navigation-be-inside-or-outside-the-header-element">heirarchies between the tags</a>. Productivity ⬆️
+    </li>
+    <li>
+      I don't need to contemplate whether is this a <span class="code">&lt;section&gt;</span> or not? Productivity ⬆️
+    </li>
+    <li>
+      I don't need to handle user agent stylesheet from different browsers when styling them. Headache ⬇️
+      <div class="image-container">
+        <img src="aside.png" alt="Screenshot from MDN Elements page with Chrome inspector">
+        <small>Screenshot from MDN Elements page with Chrome inspector, showing the need to override <span class="code">display: block;</span> with <span class="code">display: flex;</span> for <span class="code">&lt;aside&gt;</span> element.</small>
+      </div>
+    </li>
+    <li>
+      I don't need to spend extra effort making <span class="code">&lt;table&gt;</span> responsive. Productivity ⬆️
+      <div class="image-container">
+        <img src="table.png" alt="Screenshot from MDN Elements page for &lt;table&gt;">
+        <small>Screenshot from MDN Elements page for <span class="code">&lt;table&gt;</span></small>
+      </div>
+    </li>
+    <li>
+      I build either really simple websites (like this one) or really complex web apps (100k LOC web app inside a custom webview). Both use cases don't require SEO.
+    </li>
+  </ul>
+  <hr>
+  <p style="margin-bottom: 16px;">
+    Made by Zhu Liang, <a href="https://www.linkedin.com/in/zhu-liang/">LinkedIn</a> | <a href="https://github.com/paradite/whyiusediv">GitHub</a>
+  </p>
+</body>
+</html>
