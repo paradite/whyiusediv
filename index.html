@@ -76,7 +76,7 @@
 </head>
 <body>
   <h1>Why I use div,</h1>
-  <p><span class="code">&lt;p&gt;</span>, <span class="code">&lt;h1&gt;</span> and a few other things,</p>
+  <p><span class="code">&lt;p&gt;</span>, <span class="code">&lt;h1&gt;</span>, <span class="code">&lt;span&gt;</span> and a few other things,</p>
   <p>but not new HTML5 tags such as <span class="code">&lt;section&gt;</span> and <span class="code">&lt;article&gt;</span> and complicated tags such as <span class="code">&lt;table&gt;</span>.</p>
   <ul>
     <li>
@@ -90,6 +90,10 @@
     </li>
     <li>
       I don't need to handle user agent stylesheet from different browsers when styling them. Headache ⬇️
+      <ul>
+        <li>For example, I use <span class="code">&lt;span&gt;</span> with some css instead of <span class="code">&lt;code&gt;</span>, so that I don't need to worry about the user agent style sheet different browsers would have for <span class="code">&lt;code&gt;</span>. I have confidence that they look the same across different browsers.</li>
+        <li>This alone might not guarantee pixel perfect, but it's closer than using various tags.</li>
+      </ul>
       <div class="image-container">
         <img src="aside.png" alt="Screenshot from MDN Elements page with Chrome inspector">
         <small>Screenshot from MDN Elements page with Chrome inspector, showing the need to override <span class="code">display: block;</span> with <span class="code">display: flex;</span> for <span class="code">&lt;aside&gt;</span> element.</small>
